@@ -1,5 +1,5 @@
 const getRandomPokemon = async () => {
-    const randomId = Math.floor(Math.random() * 898) + 1; // There are 898 Pokémon in the PokéAPI
+    const randomId = Math.floor(Math.random() * 200) + 1; // There are 898 Pokémon in the PokéAPI
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomId}`);
     const pokemon = await response.json();
     return pokemon;
